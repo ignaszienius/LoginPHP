@@ -15,7 +15,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 	$error = "No login data!";
 }
 
-// Login check (ar vartotojas prisijunges)
+if (isset($_GET['logout'])) {
+	session_destroy();
+}
+
+// Login (session) check (ar vartotojas prisijunges)
 
 if (isset($_SESSION['user'])) {
 	include "view/main.php";

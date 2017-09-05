@@ -14,6 +14,7 @@
 		<?php 
 			echo "Sveiki, " .  $_SESSION['user']['username'];
 		 ?>.
+		 <a class="btn-sm btn-danger" href="?logout=true">Logout</a>
 	</div>
 </div>
 </body>
