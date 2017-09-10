@@ -16,6 +16,19 @@
 		 ?>.
 		 <a class="btn-sm btn-danger" href="?logout=true">Logout</a>
 	</div>
+	<div class="col">
+			<pre><?php
+			echo "POST";
+			print_r($_POST);
+
+			echo "SESSION";
+			print_r($_SESSION);
+
+			echo "COOKIE";
+			print_r($_COOKIE);
+
+			?><pre>
+		</div>
 </div>
 </body>
 </html>

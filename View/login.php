@@ -23,6 +23,7 @@
 				<label class="form-check-label">Password</label>
 				<input class="form-control" type="password" name="password">
 				<button type="submit" class="btn btn-primary">Login</button>
+				<input type="checkbox" name="remember_me">Remember me</label>
 			</form>
 		</div>
 		<div class="col">
