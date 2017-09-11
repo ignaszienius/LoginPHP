@@ -7,7 +7,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 		$_SESSION['user']['username'] = $_POST['username'];
 		$_SESSION['user']['level'] = "admin";
 
-		if($_POST["remember_me"]=='1' || $_POST["remember_me"]=='on') {
+		if($_POST['remember_me']=='1' || $_POST['remember_me']=='on') {
                     $hour = date("h:i:sa");
                     setcookie('username', $_POST['username']);
                     setcookie('time', $hour);
